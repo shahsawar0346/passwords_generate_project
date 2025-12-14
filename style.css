@@ -68,3 +68,51 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    .card {
+        width: 60vw;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        padding: 16px;
+        font-size: 1.1rem;
+        margin-top: 30px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}
