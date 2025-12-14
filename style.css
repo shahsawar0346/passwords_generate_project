@@ -7,41 +7,48 @@
 
 body {
     background-color: #f0f4f8;
+    min-height: 100vh;
 }
 
+/* Center wrapper */
 .card-body {
-    background-color: transparent;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    padding: 40px 15px;
 }
 
+/* Card */
 .card {
-    border: none;
     background-color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    height: 80vh;
-    width: 35vw;
+    width: 100%;
+    max-width: 420px;   /* desktop control */
+    padding: 25px;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+/* Heading */
 h1 {
     text-align: center;
     color: #2c3e50;
-    margin-top: 20px;
+    margin-bottom: 30px;
     text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }
 
+/* Input */
 input {
     width: 100%;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 1.2rem;
+    padding: 16px;
+    font-size: 1.1rem;
     border-radius: 10px;
     border: 1px solid #ccc;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: 0.3s;
 }
 
 input:focus {
@@ -50,65 +57,49 @@ input:focus {
     outline: none;
 }
 
+/* Button */
 button {
-    position: relative;
-    top: 80px;
     width: 100%;
-    padding: 15px;
+    padding: 14px;
+    margin-top: 25px;
     border-radius: 9px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     border: none;
     background-color: #3498db;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #2980b9;
 }
-/* Responsive for tablets */
+
+/* ================= TABLET ================= */
 @media (max-width: 1024px) {
     .card {
-        width: 60vw;
-        height: auto;
-        padding: 15px;
+        max-width: 500px;
+        padding: 22px;
     }
 
     h1 {
-        font-size: 1.5rem;
-    }
-
-    input {
-        padding: 16px;
-        font-size: 1.1rem;
-        margin-top: 30px;
-    }
-
-    button {
-        padding: 14px;
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 }
 
-/* Responsive for mobile */
+/* ================= MOBILE ================= */
 @media (max-width: 480px) {
     .card {
-        width: 90%;
-        height: auto;
-        padding: 12px;
+        padding: 18px;
     }
 
     h1 {
         font-size: 1.3rem;
-        margin-top: 15px;
     }
 
     input {
         padding: 12px;
         font-size: 1rem;
-        margin-top: 20px;
     }
 
     button {
