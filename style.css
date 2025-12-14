@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+}
+
+.card-body {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+    width: 35vw;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+button {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
